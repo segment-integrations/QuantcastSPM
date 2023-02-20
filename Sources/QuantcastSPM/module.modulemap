@@ -1,0 +1,12 @@
+//
+//  QuantcastSPM.swift
+//  
+//
+//  Created by Komal Dhingra on 20/02/23.
+//
+
+module QuantcastSPM [system] {
+    header "../../Headers/QuantcastSPM-Bridging-Header.h"
+    link "quantcast-ios-sdk"
+    export *
+}
