@@ -7,6 +7,6 @@
 
 module QuantcastSPM [system] {
     header "../../Headers/QuantcastSPM-Bridging-Header.h"
-    link "quantcast-ios-sdk"
+    link "ios-measurement"
     export *
 }

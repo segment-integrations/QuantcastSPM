@@ -1,0 +1,3 @@
+[submodule "ios-measurement"]
+	path = ios-measurement
+	url = https://github.com/quantcast/ios-measurement.git
