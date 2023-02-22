@@ -683,7 +683,7 @@
                         if (@available(iOS 12, *)) {
                             notificationName = CTServiceRadioAccessTechnologyDidChangeNotification;
                         } else {
-                            notificationName = CTRadioAccessTechnologyDidChangeNotification;
+                            notificationName = CTServiceRadioAccessTechnologyDidChangeNotification;
                         }
                         
                         [[NSNotificationCenter defaultCenter] addObserver:self
@@ -866,7 +866,7 @@
         
         return carrier;
     } else {
-        return _telephoneInfo.subscriberCellularProvider;
+        return _telephoneInfo.serviceSubscriberCellularProviders;
     }
 }
 
@@ -1022,7 +1022,7 @@ static void QuantcastReachabilityCallback(SCNetworkReachabilityRef target, SCNet
                         }
                     }
                 } else {
-                    retVal = _telephoneInfo.currentRadioAccessTechnology;
+                    retVal = _telephoneInfo.serviceCurrentRadioAccessTechnology;
                 }
             }
 #endif
